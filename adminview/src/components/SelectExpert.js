@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 
@@ -10,20 +10,6 @@ const SelectExpert = (props) => {
 
     props.setSelectedExpert(newExpert[0]);
   };
-
-  const others = (
-    <Menu onClick={handleMenuClick}>
-      {props.otherExperts.map((expert) => (
-        <Menu.Item key={expert.id}>
-          <div>
-            {" "}
-            <p>{expert.name}</p>
-            <p>Specialty: {expert.specialty}</p>
-          </div>
-        </Menu.Item>
-      ))}
-    </Menu>
-  );
 
   const menu = (
     <Menu onClick={handleMenuClick}>
@@ -57,9 +43,19 @@ const SelectExpert = (props) => {
     <div>
       <h3>Select An Expert</h3>
       <Dropdown overlay={menu}>
-        <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+        <button
+          className="ant-dropdown-link"
+          href="#"
+          onClick={(e) => e.preventDefault()}
+          style={{
+            backgroundColor: "#fff",
+            color: "#1890ff",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
           View Here <DownOutlined />
-        </a>
+        </button>
       </Dropdown>
     </div>
   );

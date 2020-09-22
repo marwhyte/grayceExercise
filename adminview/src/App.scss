@@ -19,6 +19,7 @@
 
 .connections {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -28,4 +29,7 @@
   color: white;
   padding: 10px 30px;
   cursor: pointer;
+  &:hover {
+    background-color: #4faaff;
+  }
 }
