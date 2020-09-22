@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <h1>Welcome Administrator</h1>
       <div className="mainContainer">
-        <Client />
+        <Client client={clients[0]} experts={ourExperts} />
       </div>
     </div>
   );
