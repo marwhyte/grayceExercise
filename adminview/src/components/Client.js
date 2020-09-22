@@ -15,6 +15,18 @@ const Client = (props) => {
     <div className="client">
       <Card
         title={props.client.name}
+        extra={
+          <button
+            onClick={props.skip}
+            style={{
+              border: "none",
+              color: "#1890ff",
+              backgroundColor: "#fff",
+            }}
+          >
+            Skip
+          </button>
+        }
         style={{
           width: 400,
           height: 500,
