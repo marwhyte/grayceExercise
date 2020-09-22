@@ -62,8 +62,8 @@ function App() {
         ) : (
           <p>There Are no Clients Left!</p>
         )}
-        <ShowConnections connections={connections} />
       </div>
+      <ShowConnections connections={connections} />
     </div>
   );
 }

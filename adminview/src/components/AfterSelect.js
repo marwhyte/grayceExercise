@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "antd";
 
 const AfterSelect = (props) => {
   return (
@@ -8,10 +7,14 @@ const AfterSelect = (props) => {
       {props.selectedExpert ? (
         <div>
           {" "}
-          <Button type="primary" onClick={props.addConnection}>
+          <button
+            className="button"
+            type="primary"
+            onClick={props.addConnection}
+          >
             Connect <b> {props.client.name} </b> with{" "}
             <b> {props.selectedExpert.name} </b>
-          </Button>
+          </button>
         </div>
       ) : (
         <p>Select An Expert To Continue</p>
