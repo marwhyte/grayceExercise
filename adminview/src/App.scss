@@ -3,6 +3,8 @@
 .App {
   text-align: center;
   width: 100%;
+  background-color: #f0f0f0;
+  height: 100vh;
 }
 
 .mainContainer {
@@ -32,4 +34,8 @@
   &:hover {
     background-color: #4faaff;
   }
+}
+
+h1 {
+  padding: 30px 30px;
 }

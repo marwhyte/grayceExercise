@@ -19,8 +19,8 @@ const ShowConnections = (props) => {
 
   return (
     <div className="connections">
-      <button className="button" type="primary" onClick={showModal}>
-        Open Modal
+      <button className="button" onClick={showModal}>
+        Show Connections
       </button>
       <Modal
         title="Your Connections"
