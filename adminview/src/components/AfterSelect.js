@@ -8,7 +8,7 @@ const AfterSelect = (props) => {
       {props.selectedExpert ? (
         <div>
           {" "}
-          <Button type="primary">
+          <Button type="primary" onClick={props.addConnection}>
             Connect <b> {props.client.name} </b> with{" "}
             <b> {props.selectedExpert.name} </b>
           </Button>

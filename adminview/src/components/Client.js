@@ -38,6 +38,7 @@ const Client = (props) => {
         <AfterSelect
           selectedExpert={props.selectedExpert}
           client={props.client}
+          addConnection={props.addConnection}
         />
       </Card>
     </div>

@@ -8,7 +8,6 @@ const SelectExpert = (props) => {
       (expert) => expert.id.toString() === e.key.toString()
     );
 
-    console.log(newExpert);
     props.setSelectedExpert(newExpert[0]);
   };
 
