@@ -24,11 +24,7 @@ export const ourExperts = [
     name: "Damien Tapia",
     specialty: "insurance",
   },
-  {
-    id: 6,
-    name: "Martyna Sinclair",
-    specialty: "legal",
-  },
+
   {
     id: 7,
     name: "Catrin Mcneill",

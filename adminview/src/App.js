@@ -8,12 +8,19 @@ import { ourClients } from "./data/ourClients";
 function App() {
   const [clients, setClients] = useState(ourClients);
   const [connections, setConnections] = useState([]);
+  const [selectedExpert, setSelectedExpert] = useState();
+  console.log(selectedExpert);
 
   return (
     <div className="App">
       <h1>Welcome Administrator</h1>
       <div className="mainContainer">
-        <Client client={clients[0]} experts={ourExperts} />
+        <Client
+          client={clients[0]}
+          experts={ourExperts}
+          selectedExpert={selectedExpert}
+          setSelectedExpert={setSelectedExpert}
+        />
       </div>
     </div>
   );
