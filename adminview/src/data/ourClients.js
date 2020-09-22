@@ -1,0 +1,98 @@
+export const ourClients = [
+  {
+    id: 1,
+    name: "James Walters",
+    age: "80",
+    challenge: "insurance",
+  },
+  {
+    id: 2,
+    name: "Adam Scott",
+    age: "60",
+    challenge: "finances",
+  },
+  {
+    id: 3,
+    name: "Lucy Calicott",
+    age: "70",
+    challenge: "finances",
+  },
+  {
+    id: 4,
+    name: "Ab Lincoln",
+    age: "75",
+    challenge: "legal",
+  },
+  {
+    id: 5,
+    name: "Julia Parenti",
+    age: "90",
+    challenge: "homecare",
+  },
+  {
+    id: 6,
+    name: "Parker Tayler",
+    age: "100",
+    challenge: "legal",
+  },
+  {
+    id: 7,
+    name: "Aura Jud",
+    age: "65",
+    challenge: "insurance",
+  },
+  {
+    id: 8,
+    name: "Sarah Right",
+    age: "40",
+    challenge: "finances",
+  },
+  {
+    id: 9,
+    name: "Adam Left",
+    age: "80",
+    challenge: "insurance",
+  },
+  {
+    id: 10,
+    name: "James Parker",
+    age: "80",
+    challenge: "legal",
+  },
+  {
+    id: 11,
+    name: "Parker Tayler",
+    age: "100",
+    challenge: "finances",
+  },
+  {
+    id: 12,
+    name: "Aura Jud",
+    age: "65",
+    challenge: "finances",
+  },
+  {
+    id: 13,
+    name: "Sarah Right",
+    age: "40",
+    challenge: "homecare",
+  },
+  {
+    id: 14,
+    name: "Parker Tayler",
+    age: "100",
+    challenge: "insurance",
+  },
+  {
+    id: 15,
+    name: "Aura Jud",
+    age: "65",
+    challenge: "legal",
+  },
+  {
+    id: 16,
+    name: "Sarah Right",
+    age: "40",
+    challenge: "homecare",
+  },
+];
