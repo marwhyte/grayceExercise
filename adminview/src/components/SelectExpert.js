@@ -7,7 +7,6 @@ const SelectExpert = (props) => {
     const newExpert = props.experts.filter(
       (expert) => expert.id.toString() === e.key.toString()
     );
-
     props.setSelectedExpert(newExpert[0]);
   };
 

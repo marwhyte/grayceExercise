@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "antd";
 import SelectExpert from "./SelectExpert";
-import AfterSelect from "./AfterSelect";
+import AfterExpertSelect from "./AfterExpertSelect";
 
 const Client = (props) => {
   const recommendedExperts = props.experts.filter(
@@ -22,23 +22,25 @@ const Client = (props) => {
               border: "none",
               color: "#1890ff",
               backgroundColor: "#fff",
+              outline: "none",
+              cursor: "pointer",
             }}
           >
             Skip
           </button>
         }
         style={{
-          width: 400,
-          height: 500,
+          width: 500,
+          height: 400,
           textAlign: "left",
         }}
       >
         <div>
           <p>
-            Age: <b>{props.client.age}</b>
+            Client Age: <b>{props.client.age}</b>
           </p>
           <p>
-            Needs Most Help with: <b>{props.client.challenge}</b>
+            Client Needs Most Help with: <b>{props.client.challenge}</b>
           </p>
           <SelectExpert
             recommendedExperts={recommendedExperts}
@@ -47,7 +49,7 @@ const Client = (props) => {
             experts={props.experts}
           />
         </div>
-        <AfterSelect
+        <AfterExpertSelect
           selectedExpert={props.selectedExpert}
           client={props.client}
           addConnection={props.addConnection}

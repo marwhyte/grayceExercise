@@ -11,11 +11,12 @@ function App() {
   const [clients, setClients] = useState(ourClients);
   const [connections, setConnections] = useState([]);
   const [selectedExpert, setSelectedExpert] = useState();
-  console.log(clients);
+
   const skip = () => {
     const currClient = clients[0];
     setClients([...clients.slice(1), currClient]);
   };
+
   const addConnection = () => {
     const newConnectionClient = clients[0];
     setClients(clients.slice(1));

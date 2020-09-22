@@ -1,6 +1,6 @@
 import React from "react";
 
-const AfterSelect = (props) => {
+const AfterExpertSelect = (props) => {
   return (
     <div className="afterSelect">
       {" "}
@@ -12,7 +12,7 @@ const AfterSelect = (props) => {
             type="primary"
             onClick={props.addConnection}
           >
-            Connect <b> {props.client.name} </b> with{" "}
+            Connect <b> {props.client.name} </b> with
             <b> {props.selectedExpert.name} </b>
           </button>
         </div>
@@ -23,4 +23,4 @@ const AfterSelect = (props) => {
   );
 };
 
-export default AfterSelect;
+export default AfterExpertSelect;
